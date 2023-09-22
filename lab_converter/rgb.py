@@ -27,12 +27,7 @@ def lab2rgb(l: float, a: float, b: float) -> dict:
         'r' : r_round,
         'g' : g_round,
         'b' : b_round
-    }  
-
-    
-    print("Converting to rgb...")
-    print(rgb_dict)
-    print('______________________________')
+    }
 
     return rgb_dict 
 

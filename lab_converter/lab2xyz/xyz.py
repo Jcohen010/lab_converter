@@ -10,8 +10,4 @@ def lab2xyz(l: float, a: float, b: float) -> colormath.color_objects.XYZColor:
     # convert from lab into xyz colorspace
     xyz = convert_color(lab,XYZColor)
 
-    print("Converting to xyz...")
-    print(xyz)
-    print('______________________________')
-
     return xyz
