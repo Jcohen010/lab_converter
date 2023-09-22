@@ -6,12 +6,12 @@ In order to convert lab values to a hex code for a given color, down load [this 
 
 ### Installation
 ```
-pip install lab_converter
+pip install lab-converter
 ```
 
 ### Usage
 ```
-from lab_converter import lab2hex
+from lab-converter import lab2hex
 
 hex = lab2hex(52.9, 8.88, 54.53, hex_conversion_csv_path="./Base10_Hex.csv")
 
