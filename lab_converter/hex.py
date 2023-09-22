@@ -5,11 +5,11 @@ from .lab2xyz.read_conversion_csv import extract_store_base10_hex_conversion
 
 def lab2hex(l: float, a: float, b: float, hex_conversion_csv_path: str) -> dict:
     rgb_dict = lab2rgb(l=l, a=a, b=b)
-    rgb_dict_ckecked = rgb_value_checker(rgb_dict=rgb_dict)
+    rgb_dict_checked = rgb_value_checker(rgb_dict=rgb_dict)
 
-    r = rgb_dict_ckecked['r']
-    g = rgb_dict_ckecked['g']
-    b = rgb_dict_ckecked['b']
+    r = rgb_dict_checked['r']
+    g = rgb_dict_checked['g']
+    b = rgb_dict_checked['b']
 
     hex_pos1 = ''
     hex_pos2 = ''
@@ -25,7 +25,7 @@ def lab2hex(l: float, a: float, b: float, hex_conversion_csv_path: str) -> dict:
         if b == row['base10']:
             hex_pos3 = row['hex']
     hex_color_value = f"#{hex_pos1}{hex_pos2}{hex_pos3}" 
-    
+
     return hex_color_value
 
 
